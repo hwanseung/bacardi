@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
+import * as file from 'core/base/file';
 import {IDLTypeMap} from 'core/parser/idl_type_map';
 import {DefinitionInfo} from 'core/parser/idl_types';
 import {Parser} from 'core/parser/parser';
-import * as file from 'generator/base/file';
 
 async function readAndParse(idlFilePath: string): Promise<void> {
   const idlFragment: string = await file.read(idlFilePath);
